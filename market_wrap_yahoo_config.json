@@ -1,0 +1,58 @@
+{
+  "markets": [
+    {
+      "key": "us",
+      "outputStem": "us_market_wrap",
+      "reportTitle": "美股投資晨報",
+      "subtitleSuffix": "美股收盤整理",
+      "summarySymbol": "^GSPC",
+      "indices": [
+        { "name": "S&P 500", "symbol": "^GSPC" },
+        { "name": "Dow Jones", "symbol": "^DJI" },
+        { "name": "Nasdaq Composite", "symbol": "^IXIC" },
+        { "name": "Russell 2000", "symbol": "^RUT" }
+      ],
+      "macro": [
+        { "name": "VIX", "symbol": "^VIX", "changeStyle": "abs" },
+        { "name": "US 10Y Treasury", "symbol": "^TNX", "changeStyle": "bps", "priceScale": 0.1 },
+        { "name": "DXY", "symbol": "DX-Y.NYB", "changeStyle": "pct" },
+        { "name": "WTI Front", "symbol": "CL=F", "changeStyle": "pct" }
+      ],
+      "sectors": [
+        { "name": "Technology", "symbol": "XLK" },
+        { "name": "Financials", "symbol": "XLF" },
+        { "name": "Energy", "symbol": "XLE" },
+        { "name": "Health Care", "symbol": "XLV" },
+        { "name": "Industrials", "symbol": "XLI" },
+        { "name": "Consumer Discretionary", "symbol": "XLY" },
+        { "name": "Consumer Staples", "symbol": "XLP" },
+        { "name": "Utilities", "symbol": "XLU" },
+        { "name": "Materials", "symbol": "XLB" },
+        { "name": "Real Estate", "symbol": "XLRE" },
+        { "name": "Communication Services", "symbol": "XLC" }
+      ],
+      "megacaps": [
+        { "name": "Apple", "symbol": "AAPL" },
+        { "name": "Microsoft", "symbol": "MSFT" },
+        { "name": "NVIDIA", "symbol": "NVDA" },
+        { "name": "Amazon", "symbol": "AMZN" },
+        { "name": "Alphabet", "symbol": "GOOGL" },
+        { "name": "Meta", "symbol": "META" },
+        { "name": "Tesla", "symbol": "TSLA" },
+        { "name": "Broadcom", "symbol": "AVGO" }
+      ]
+    },
+    {
+      "key": "europe",
+      "outputStem": "europe_market_snapshot",
+      "reportTitle": "歐洲股市晨報",
+      "subtitleSuffix": "歐股收盤整理",
+      "summarySymbol": "^FTSE",
+      "indices": [
+        { "name": "FTSE 100", "symbol": "^FTSE" },
+        { "name": "CAC 40", "symbol": "^FCHI" },
+        { "name": "DAX", "symbol": "^GDAXI" }
+      ]
+    }
+  ]
+}
